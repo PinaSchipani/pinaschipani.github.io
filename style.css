@@ -13,21 +13,21 @@ body p {
 
 section {
     background: white;
-    padding: 20px;
 }
 
 .full-screen {
     position: relative;
-    min-height: 100vh;
+    min-height: 80vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
 }
 
 .flash.full-screen {
     display: flex;
     height: 100vh;
-    align-items: center;
-    justify-content: center;
-    flex-flow: column;
     background-size: 100% 4px;
     animation: gradientMove 200ms ease infinite;
     overflow: hidden;
@@ -91,22 +91,31 @@ h1 {
     margin: 100px auto;
 }
 
-.content.text::first-lecter {
-    font-size: 300%;
-    float: left;
+img {
+    width: 100%;
+    height: auto;
+    margin: 40px 0px;
+    margin-bottom: 0px;
+}
+
+.img-description {
+    text-align: center;
+    font-size: 12px;
+    margin: 0;
+    margin-bottom: 40px;
 }
 
 .chart {
-    width: 400px;
+    width: 600px;
     margin: 0px auto;
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .chart div {
     display: block;
     height: 400px;
-    width: 400px;
-    padding-bottom: 20px;
+    width: 100%;
 }
 
 .chart.double {
@@ -119,4 +128,7 @@ footer {
     height: 200px;
     width: 100%;
     background: black;
+    text-align: center;
+    color: white;
+    padding: 40px;
 }
