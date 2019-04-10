@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     font-family: 'Montserrat', sans-serif;
+    min-width: 1100px;
 }
 
 body * {
@@ -31,14 +32,15 @@ section {
     background-size: 100% 4px;
     animation: gradientMove 200ms ease infinite;
     overflow: hidden;
+    background: black;
 }
 
 .flash video {
     position: absolute;
     left: 0;
     top: 0;
-    width: 100%;
     height: auto;
+    min-height: 100vh;
 }
 
 h1 {
